@@ -2,8 +2,6 @@
 
 Este repositório contém 20 questões fundamentais sobre arquitetura de IA Generativa, RAG, Bancos de Dados Vetoriais e o ecossistema Mosaic AI da Databricks.
 
-**Resultado: 95/100** (19 acertos, 1 erro)
-
 ---
 
 ## 1. RAG vs. Fine-Tuning
