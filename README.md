@@ -1,0 +1,1 @@
+# databricks_gen_ai_associate_preparation
