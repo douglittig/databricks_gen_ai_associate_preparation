@@ -1,6 +1,6 @@
 # Simulado 02: IA Generativa e Mosaic AI (Databricks)
 
-Este simulado contém 20 questões sobre arquitetura de IA Generativa, RAG, Bancos de Dados Vetoriais e o ecossistema Mosaic AI da Databricks.
+Este simulado contém 20 questões sobre Arquiteturas de Agentes, MLflow Tracing, Vector Search, Multimodalidade e Desenvolvimento de Aplicações GenAI no ecossistema Databricks.
 
 ---
 
