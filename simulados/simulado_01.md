@@ -52,6 +52,8 @@ Como um Banco de Dados Vetorial difere fundamentalmente de um banco de dados rel
 - ❌ **C)** Bancos vetoriais armazenam dados em linhas e colunas; relacionais usam blobs.
 - ❌ **D)** Bancos vetoriais dependem de B-Tree; relacionais usam correspondência probabilística.
 
+> **Explicação:** Bancos vetoriais usam algoritmos de busca aproximada (ANN) para encontrar vetores semanticamente similares, enquanto bancos relacionais usam índices exatos (B-Tree) para correspondências precisas.
+
 ---
 
 ## 5. Similaridade de Cosseno
@@ -63,6 +65,8 @@ Como um desenvolvedor deve interpretar a relação entre "Similaridade de Cossen
 - ❌ **C)** Cosseno só se aplica a imagens; texto exige distância de Manhattan.
 - ❌ **D)** Cosseno mede magnitude; Euclidiana mede o ângulo.
 
+> **Explicação:** A similaridade de cosseno mede o ângulo entre dois vetores. Quanto menor o ângulo (vetores apontando na mesma direção), maior o score de similaridade, independente da magnitude dos vetores.
+
 ---
 
 ## 6. Model Serving Endpoint
@@ -73,6 +77,8 @@ Qual a função do "Model Serving Endpoint" na arquitetura RAG do Databricks?
 - ❌ **B)** Atuar como camada de armazenamento para PDFs brutos.
 - ❌ **C)** Realizar o chunking de dados durante a ingestão.
 - ❌ **D)** Calcular a similaridade de cosseno entre vetores.
+
+> **Explicação:** O Model Serving Endpoint abstrai a complexidade de deploy e permite consultar tanto modelos hospedados internamente quanto APIs externas (como OpenAI) através de uma interface unificada.
 
 ---
 
@@ -98,6 +104,8 @@ Como o Mosaic AI Vector Search suporta segurança e controle de acesso (ACLs)?
 - ❌ **C)** Criando um índice separado para cada usuário.
 - ❌ **D)** Exigindo credenciais de SQL Warehouse no prompt.
 
+> **Explicação:** A integração com Unity Catalog permite herdar permissões de tabelas e usar filtros de metadados para implementar row-level security nas buscas vetoriais.
+
 ---
 
 ## 9. Requisito de Embedding Space
@@ -108,6 +116,8 @@ Qual o requisito crítico do "Espaço de Embedding" ao selecionar modelos para R
 - ❌ **B)** A consulta deve usar um modelo diferente dos documentos para evitar overfitting.
 - ❌ **C)** O modelo deve ser proprietário para garantir privacidade.
 - ❌ **D)** Dimensões devem ser menores que 256 para compatibilidade.
+
+> **Explicação:** Se query e documentos usarem modelos diferentes, os vetores estarão em espaços matemáticos distintos, tornando a comparação de similaridade sem sentido.
 
 ---
 
@@ -120,6 +130,8 @@ Qual a função técnica primária do componente de "Recuperação" (Retrieval) 
 - ❌ **C)** Converter linguagem natural em SQL.
 - ✅ **D)** Identificar e recuperar contexto relevante de um Vector Store para aumentar o prompt enviado ao LLM.
 
+> **Explicação:** O Retrieval busca documentos semanticamente relevantes no Vector Store e os injeta no prompt, fornecendo ao LLM o contexto necessário para gerar respostas precisas.
+
 ---
 
 ## 11. Lost in the Middle
@@ -130,6 +142,8 @@ Que fenômeno da janela de contexto deve ser mitigado para garantir recall factu
 - ❌ **B)** Alucinação de Contexto.
 - ❌ **C)** Needle in a Haystack.
 - ✅ **D)** Lost in the Middle (informações no meio do contexto são frequentemente ignoradas pelo modelo).
+
+> **Explicação:** Pesquisas mostram que LLMs tendem a dar mais atenção ao início e fim do contexto, ignorando informações no meio. Estratégias como reordenação de chunks ajudam a mitigar isso.
 
 ---
 
@@ -142,6 +156,8 @@ Por que o algoritmo HNSW é preferido em relação ao KNN em produção?
 - ❌ **C)** HNSW comprime vetores em binário.
 - ✅ **D)** HNSW permite busca ANN (aproximada), trocando mínima precisão por ganhos massivos de velocidade via grafos.
 
+> **Explicação:** KNN exato tem complexidade O(n), inviável para milhões de vetores. HNSW usa estrutura de grafos hierárquicos para busca logarítmica, sacrificando ~5% de precisão por 1000x mais velocidade.
+
 ---
 
 ## 13. Documentos Complexos (Imagens/Tabelas)
@@ -152,6 +168,8 @@ Estratégia avançada para documentos complexos (tabelas/imagens) em RAG?
 - ❌ **B)** Criar Vector Stores separados para imagens.
 - ❌ **C)** Descartar imagens/tabelas para focar em texto bruto.
 - ❌ **D)** Indexar binários de imagens diretamente no espaço de texto.
+
+> **Explicação:** Modelos de layout (como LayoutLM) extraem estrutura, e LLMs geram descrições textuais. Isso permite busca semântica enquanto mantém links para os assets originais.
 
 ---
 
@@ -164,9 +182,11 @@ Qual o trade-off entre chunks pequenos vs. grandes?
 - ✅ **C)** Pequenos focam em significados específicos (precisão), mas podem carecer de contexto; grandes mantêm contexto, mas introduzem ruído.
 - ❌ **D)** Pequenos capturam temas amplos; grandes focam em detalhes.
 
+> **Explicação:** Chunks pequenos (~100-200 tokens) são precisos mas perdem contexto. Chunks grandes (~500-1000 tokens) preservam contexto mas trazem informação irrelevante. O ideal depende do caso de uso.
+
 ---
 
-## 15. Windowed Summarization ⚠️
+## 15. Windowed Summarization
 
 Técnica para mitigar perda de contexto entre chunks consecutivos incluindo sumários prévios?
 
@@ -175,8 +195,6 @@ Técnica para mitigar perda de contexto entre chunks consecutivos incluindo sum�
 - ❌ **C)** Semantic overlap.
 - ❌ **D)** Product Quantization.
 
-> **⚠️ Questão errada no simulado** - A resposta correta é **A) Windowed summarization**.
->
 > **Explicação:** A sumarização em janela condensa o contexto anterior e o injeta no chunk atual, garantindo continuidade semântica sem redundância textual excessiva.
 
 ---
@@ -190,6 +208,8 @@ Componente Databricks responsável pelo "Index & Embed" e busca de contexto via 
 - ✅ **C)** Mosaic AI Vector Search.
 - ❌ **D)** Mosaic AI Model Serving.
 
+> **Explicação:** Mosaic AI Vector Search é o serviço gerenciado que cria embeddings, indexa vetores e sincroniza automaticamente com Delta Tables via CDC.
+
 ---
 
 ## 17. Injeção de Contexto na Inferência
@@ -200,6 +220,8 @@ Em que ponto o "Contexto" é injetado na fase de Inferência?
 - ❌ **B)** No Banco Vetorial como nova linha.
 - ❌ **C)** Manualmente pelo usuário.
 - ❌ **D)** Durante o pré-treinamento do modelo.
+
+> **Explicação:** O fluxo RAG é: Query → Retrieval → Contexto recuperado → Montagem do prompt (query + contexto) → Envio ao LLM → Resposta gerada.
 
 ---
 
@@ -212,6 +234,8 @@ Papel do MLflow na fase de Avaliação de um RAG?
 - ❌ **C)** Retreinar modelos de embedding.
 - ✅ **D)** Fornecer um "Evaluation Harness" para testar métricas (faithfulness, relevância) usando LLMs como juízes.
 
+> **Explicação:** MLflow Evaluate oferece métricas específicas para RAG (faithfulness, relevância, toxicidade) usando LLMs como juízes automatizados para avaliar a qualidade das respostas.
+
 ---
 
 ## 19. Sincronização e CDC
@@ -223,6 +247,8 @@ Recurso do Vector Search que garante atualização automática sem reconstruçã
 - ❌ **C)** Geração de embedding em tempo real.
 - ❌ **D)** Algoritmos HNSW preditivos.
 
+> **Explicação:** Delta Sync detecta inserções, atualizações e deleções na Delta Table de origem e propaga automaticamente para o índice vetorial, mantendo-o sempre atualizado.
+
 ---
 
 ## 20. Chain-of-Thought (CoT)
@@ -233,3 +259,5 @@ Diferença entre Chain-of-Thought (CoT) e Few-shot prompting?
 - ❌ **B)** CoT foca em estilo; Few-shot não usa exemplos.
 - ❌ **C)** CoT reduz latência; Few-shot aumenta.
 - ❌ **D)** CoT é para sumários; Few-shot para aritmética.
+
+> **Explicação:** CoT instrui o modelo a "pensar em voz alta", mostrando raciocínio passo-a-passo. Few-shot fornece exemplos de input/output sem explicar o processo de raciocínio.
