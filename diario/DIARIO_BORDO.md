@@ -25,8 +25,8 @@
 
 | Métrica | Meta | Atual |
 |---------|------|-------|
-| Dias estudados | 85 | 0 |
-| Horas totais | ~90h | 0h |
+| Dias estudados | 85 | 1 |
+| Horas totais | ~90h | 1h15 |
 | Labs completados | 9 | 0 |
 | Flashcards criados | ~100 | 0 |
 | Vídeos gravados | 24 | 0 |
@@ -41,20 +41,24 @@
 
 ### SEMANA 1: Metalearning & Setup (06/02 - 08/02)
 
-#### Sex 06/02 - Dia 1
+#### Sex 06/02 - Dia 1 ✅
 **Planejado:**
-- [ ] Ler `knowledge_base/INDEX.md`
-- [ ] Ler `00-OReilly-Book/1.-Exam-Details-and-Resources.md`
-- [ ] Verificar acesso ao Databricks workspace
-- [ ] Gravar Vídeo #1: "Roadmap Completo"
+- [x] Ler `knowledge_base/INDEX.md`
+- [x] Ler `00-OReilly-Book/1.-Exam-Details-and-Resources.md`
+- [x] Verificar acesso ao Databricks workspace
+- [ ] Gravar Vídeo #1: "Roadmap Completo" *(pendente)*
 
 **Realizado:**
-- (aguardando registro)
+- Leitura completa dos dois textos introdutórios
+- Ambiente Databricks Free Edition configurado e funcionando
+- MLflow 3+ operacional
+- Vector Search disponível
 
-**Tempo estudado:** _h _min
+**Tempo estudado:** 1h 15min
 
 **Observações:**
--
+- Compreensão clara da estrutura do exame (6 seções, pesos)
+- Ambiente prático já está 100% pronto
 
 **Humor/Energia:** ⭐⭐⭐⭐⭐
 
@@ -130,4 +134,4 @@
 
 ---
 
-*Última atualização: 06/02/2026*
+*Última atualização: 06/02/2026 - Dia 1 concluído*
