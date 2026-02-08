@@ -215,3 +215,7 @@ __marimo__/
 
 # DS_Store
 .DS_Store
+
+# MacOS
+/knowledge_base/dontSync/*
+/labs/dontSync/*
