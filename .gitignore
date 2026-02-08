@@ -209,3 +209,9 @@ __marimo__/
 
 # Obsidian
 .obsidian/
+
+# Excalidraw Dont Commit
+/Excalidraw/dontSync/*
+
+# DS_Store
+.DS_Store
