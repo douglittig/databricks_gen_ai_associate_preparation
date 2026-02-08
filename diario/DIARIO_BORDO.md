@@ -25,11 +25,11 @@
 
 | Métrica | Meta | Atual |
 |---------|------|-------|
-| Dias estudados | 85 | 1 |
-| Horas totais | ~90h | 1h15 |
+| Dias estudados | 85 | 3 |
+| Horas totais | ~90h | 4h15 |
 | Labs completados | 9 | 0 |
 | Flashcards criados | ~100 | 0 |
-| Vídeos gravados | 24 | 0 |
+| Vídeos gravados | 25 | 3 |
 | Practice Exam 01 | ≥85% | - |
 | Practice Exam 02 | ≥85% | - |
 | Practice Exam 03 | ≥85% | - |
@@ -46,7 +46,7 @@
 - [x] Ler `knowledge_base/INDEX.md`
 - [x] Ler `00-OReilly-Book/1.-Exam-Details-and-Resources.md`
 - [x] Verificar acesso ao Databricks workspace
-- [ ] Gravar Vídeo #1: "Roadmap Completo" *(pendente)*
+- [x] Gravar Vídeo #1: "Roadmap Completo" 
 
 **Realizado:**
 - Leitura completa dos dois textos introdutórios
@@ -64,25 +64,27 @@
 
 ---
 
-#### Sáb 07/02 - Dia 2
+#### Sáb 07/02 - Dia 2 ✅ (realizado no Dom 08/02)
 **Planejado:**
-- [ ] Ler Exam Guide PDF
-- [ ] Criar lista de tópicos por seção
-- [ ] Self-Assessment das 6 seções
+- [x] Ler Exam Guide PDF
+- [x] Criar lista de tópicos por seção
+- [x] Self-Assessment das 6 seções
 
 **Realizado:**
-- (aguardando registro)
+- Conteúdo absorvido durante preparação do vídeo "Overview da Prova"
+- No vídeo, explicou item a item do Exam Guide
+- Self-assessment feito implicitamente ao analisar cada seção
 
-**Tempo estudado:** _h _min
+**Tempo estudado:** (contabilizado no Dia 3)
 
 **Observações:**
--
+- Dia não estudado separadamente, mas tarefas cobertas na gravação do Dom
 
-**Humor/Energia:** ⭐⭐⭐⭐⭐
+**Humor/Energia:** ⭐⭐⭐⭐
 
 ---
 
-#### Dom 08/02 - Dia 3 (Revisão + Simulado)
+#### Dom 08/02 - Dia 3 (Revisão + Simulado) ⚠️ PARCIAL
 **Planejado:**
 - [ ] Ler `00-OReilly-Book/2.-Designing-Generative-AI-Applications.md`
 - [ ] Criar 10 flashcards
@@ -90,16 +92,22 @@
 - [ ] Gravar Vídeo #2: "5 Conceitos Essenciais"
 
 **Realizado:**
-- (aguardando registro)
+- [x] Gravou Vídeo EXTRA: "Fundamentos de Streaming de Dados"
+- [x] Gravou Vídeo #1: "Overview da Prova" (publica 11/02 as 11:11)
+- [x] Criou diagramas Excalidraw (1.2b Streaming + 3.1 RAG Pipeline)
+- [ ] Estudo teórico não realizado
+- [ ] Simulado não realizado
 
-**Tempo estudado:** _h _min
+**Tempo dedicado:** ~3h+ (gravação e preparação de vídeos)
 
-**Score Simulado:** _/10 (_%)
+**Score Simulado:** N/A (não realizado)
 
 **Observações:**
--
+- Dia produtivo no YouTube mas sem avanço no conteúdo teórico
+- Diagramas Excalidraw criados servem como material de apoio
+- Tarefas teóricas acumuladas: Exam Guide (Dia 2) + O'Reilly Cap.2 (Dia 3) + Simulado
 
-**Humor/Energia:** ⭐⭐⭐⭐⭐
+**Humor/Energia:** ⭐⭐⭐⭐
 
 ---
 
@@ -112,7 +120,8 @@
 - (será preenchido conforme avança)
 
 ### Ajustes no plano
-- (será preenchido conforme necessário)
+- **08/02:** Dia 2 coberto via gravação do vídeo. Pendente do Dia 3: O'Reilly Cap.2, Flashcards e Simulado Q1-10.
+- **Sugestão:** Encaixar O'Reilly Cap.2 na Seg 09/02 e Simulado #1 (Q1-10) na Ter 10/02 antes do conteúdo normal.
 
 ---
 
@@ -126,12 +135,13 @@
 
 ## Vídeos Gravados
 
-| # | Data | Título | Link |
-|---|------|--------|------|
-| 1 | - | Roadmap Completo | - |
-| 2 | - | 5 Conceitos Essenciais | - |
-| ... | ... | ... | ... |
+| # | Data Gravação | Publicação | Título | Link |
+|---|-------------|------------|--------|------|
+| 1 | 08/02 | 08/02 | Fundamentos de Streaming de Dados | - |
+| 2 | 08/02 | 11/02 11:11 | Roadmap Completo: Certificação Databricks GenAI em 90 dias | - |
+| 3 | 08/02 | 13/02 | Ingestão de Dados na Camada Bronze: Simplex e Multiplex | - |
+| ... | ... | ... | ... | ... |
 
 ---
 
-*Última atualização: 06/02/2026 - Dia 1 concluído*
+*Última atualização: 08/02/2026 - Dia 3 (parcial) registrado*
