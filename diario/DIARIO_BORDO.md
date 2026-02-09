@@ -2,20 +2,20 @@
 
 ## Resumo do Progresso
 
-| Semana | Período | Status | Score Simulado |
-|--------|---------|--------|----------------|
-| 1 | 06/02 - 08/02 | 🔄 Em andamento | - |
-| 2 | 09/02 - 15/02 | ⏳ Pendente | - |
-| 3 | 16/02 - 22/02 | ⏳ Pendente | - |
-| 4 | 23/02 - 01/03 | ⏳ Pendente | - |
-| 5 | 02/03 - 08/03 | ⏳ Pendente | - |
-| 6 | 09/03 - 15/03 | ⏳ Pendente | - |
-| 7 | 16/03 - 22/03 | ⏳ Pendente | - |
-| 8 | 23/03 - 29/03 | ⏳ Pendente | - |
-| 9 | 30/03 - 05/04 | ⏳ Pendente | - |
-| 10 | 06/04 - 12/04 | ⏳ Pendente | - |
-| 11 | 13/04 - 19/04 | ⏳ Pendente | - |
-| 12 | 20/04 - 30/04 | ⏳ Pendente | - |
+| Semana | Período       | Status     | Score Simulado |
+| ------ | ------------- | ---------- | -------------- |
+| 1      | 06/02 - 08/02 | ✅ Completo | -              |
+| 2      | 09/02 - 15/02 | ⏳ Pendente | -              |
+| 3      | 16/02 - 22/02 | ⏳ Pendente | -              |
+| 4      | 23/02 - 01/03 | ⏳ Pendente | -              |
+| 5      | 02/03 - 08/03 | ⏳ Pendente | -              |
+| 6      | 09/03 - 15/03 | ⏳ Pendente | -              |
+| 7      | 16/03 - 22/03 | ⏳ Pendente | -              |
+| 8      | 23/03 - 29/03 | ⏳ Pendente | -              |
+| 9      | 30/03 - 05/04 | ⏳ Pendente | -              |
+| 10     | 06/04 - 12/04 | ⏳ Pendente | -              |
+| 11     | 13/04 - 19/04 | ⏳ Pendente | -              |
+| 12     | 20/04 - 30/04 | ⏳ Pendente | -              |
 
 **Legenda:** ✅ Completo | 🔄 Em andamento | ⏳ Pendente | ⚠️ Atrasado
 
